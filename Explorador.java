@@ -32,8 +32,8 @@ class Explorador extends Combatiente{
 	*/
 	public void AtaqueE(){
 		this.HP = 250; //Valores de vida, ataque y especial.
-		this.AP = 20;
-		this.Especial = 55;
+		this.AP = 35;
+		this.Especial = 75;
 		int contador = 0; //Contador de daño.
 		System.out.println("Desea decir algo a sus contrincantes?\n");
 		MensajeE = scan.next();
@@ -41,12 +41,12 @@ class Explorador extends Combatiente{
 		this.eleccion = scan.nextInt();
 		
 		if (this.eleccion == 1){ //Opcion de ataque.
-			contador = contador + 20;
-			System.out.println("El enemigo ha perdido 20 puntos de daño");
+			contador = contador + 35;
+			System.out.println("El enemigo ha perdido 35 puntos de daño");
 		}
 		else if (this.eleccion == 2){ //Opcion de especial.
-			contador = contador + 55;
-			System.out.println("Increible! El enemigo ha sufrido 55 puntos de daño.");
+			contador = contador + 75;
+			System.out.println("Increible! El enemigo ha sufrido 75 puntos de daño.");
 
 		}
 		else if (this.eleccion == 3){ //Opcion de items.

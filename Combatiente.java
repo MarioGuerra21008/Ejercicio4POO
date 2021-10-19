@@ -8,7 +8,7 @@ import java.io.IOException;
 * @see Combatiente
 */
 
-class Combatiente{
+abstract class Combatiente{
 	/**
 	* Constructor para la clase de Combatiente.
 	*/

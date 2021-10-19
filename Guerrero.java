@@ -32,8 +32,8 @@ class Guerrero extends Combatiente{
 	*/
 	public void AtaqueG(){
 		this.HP = 500; //Valores de vida, ataque y especial.
-		this.AP = 75;
-		this.Especial = 130;
+		this.AP = 95;
+		this.Especial = 135;
 		int contador = 0; //Contador de daño.
 		System.out.println("Desea decir algo a sus contrincantes?\n"); //Mensaje que quiere decirle a sus oponentes.
 		MensajeG = scan.next();
@@ -41,12 +41,12 @@ class Guerrero extends Combatiente{
 		this.eleccion = scan.nextInt();
 		
 		if (this.eleccion == 1){ //Opcion de atacar.
-			contador = contador + 75;
-			System.out.println("El enemigo ha perdido 75 puntos de daño");
+			contador = contador + 95;
+			System.out.println("El enemigo ha perdido 95 puntos de daño");
 			}
 		else if (this.eleccion == 2){ //Opcion de especial.
-			contador = contador + 130;
-			System.out.println("Increible! El enemigo ha sufrido 130 puntos de daño.");
+			contador = contador + 135;
+			System.out.println("Increible! El enemigo ha sufrido 135 puntos de daño.");
 			}
 		else if (this.eleccion == 3){ //Opcion para dar items.
 			System.out.println("1. Jarabe.\n2. Veneno.\n");
